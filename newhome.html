@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Annie+Use+Your+Telescope&family=Londrina+Shadow&display=swap" rel="stylesheet">
+  <style>
+    .nav {
+      background-color: orange;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      border: 2px solid rgb(255, 10, 10);
+      height: 50px;
+      justify-content: space-between;
+
+    }
+
+    .londrina-shadow-regular {
+      font-family: "Londrina Shadow", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      
+    }
+
+    .login {
+      display: flex;
+      height: fit-content;
+      align-items: center;
+      justify-content: center;
+      
+
+  
+    }
+    .search {
+      display: flex;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: row;
+      height: 120px;
+      background-color: rgb(253, 200, 132);
+      align-content: center;
+      justify-content: center;
+    }
+
+    .logo {
+      display: flex;
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      margin-top: 50px;
+
+    }
+
+    logo :first-child {
+      height: 100px;
+      width: 100px;
+    }
+
+    .question-container {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      background-color: rgb(253, 200, 132);
+      align-content: center;
+      justify-content: center;
+    }
+
+    .list-container {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      background-color: rgb(247, 152, 27);
+      align-content: space-evenly;
+    }
+
+    h3 {
+      font-style: "Londrina Shadow";
+      border: 1px solid white;
+      display: flex;
+      color: azure;
+      position: relative;
+      height: fit-content;
+      font-size: xx-large;
+      margin-right: 50px;
+    }
+
+    li > img {
+      display: flex;
+      height: 100px;
+      width: 100px;
+      margin-left: 50px;
+    }
+
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      align-content: center;
+      width: 500px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <nav class="nav container">
+    <div class="home">Home</div>
+    <div class="search">
+      <p>Search: <input type="text"></p>
+    </div>
+    <div class="login">Login</div>
+  </nav>
+  <div class="logo-container">
+    <div class="logo">
+      <img src="svgImages/logo.svg">
+    </div>
+  </div>
+  <div class="question-container">
+    <h1 class="londrina-shadow-regular">How Are You Feeling Today?</h1>
+  </div>
+  <div class="list-container">
+    <ul>
+      <li>
+        <img src="svgImages/smile_happy_fun_big_smile_eyes_closed_emoji_expression_face_emoticon_cheerful_cute_joy_laugh_happiness_smiling-512 Small.svg">
+        <h3>Happy</h3>
+      </li>
+      <li>
+        <img src="svgImages/chillin.svg">
+        <h3>Chillin</h3>
+      </li>
+      <li>
+        <img src="svgImages/hapless.svg">
+        <h3>Sad</h3>
+      </li>
+      <li>
+        <img src="svgImages/pouting.svg">
+        <h3>Need Help!</h3>
+      </li>
+    </ul>
+  </div>
+  <footer>
+  </footer>
+  <script>
+    // Get the button element
+    const homeHover = document.querySelector('.home');
+
+    // Add a mouseover event listener
+    homeHover.addEventListener('mouseover', () => {
+      // Change the button's background color
+      homeHover.style.textDecoration = 'underline';
+      homeHover.style.cursor = 'pointer';
+
+    });
+
+    // Add a mouseout event listener
+    homeHover.addEventListener('mouseout', () => {
+      // Change the button's background color back to its original color
+      homeHover.style.backgroundColor = '';
+      
+    });
+
+    const loginHover = document.querySelector('.login');
+
+    // Add a mouseover event listener
+    loginHover.addEventListener('mouseover', () => {
+      // Change the text decoration
+      loginHover.style.textDecoration = 'underline';
+      loginHover.style.cursor = 'pointer';
+    });
+
+    // Add a mouseout event listener
+    loginHover.addEventListener('mouseout', () => {
+      // Change the button's background color back to its original color
+      loginHover.style.textDecoration = '';
+    });
+
+
+  </script>
+</body>
+</html>
