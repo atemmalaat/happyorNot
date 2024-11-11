@@ -236,42 +236,58 @@
   </div>
   <footer>
   </footer>
+  
+  
+  
   <script>
-    // Get the button element
-    const homeHover = document.querySelector('.home');
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get the button element
+        const homeHover = document.querySelector('.home');
+        const loginHover = document.querySelector('.login');
+        
+        // Check if homeHover exists before attaching event listeners
+        if (homeHover) {
+            // Add a mouseover event listener
+            homeHover.addEventListener('mouseover', () => {
+                homeHover.style.textDecoration = 'underline';
+                homeHover.style.cursor = 'pointer';
+            });
 
-    // Add a mouseover event listener
-    homeHover.addEventListener('mouseover', () => {
-      // Change the button's background color
-      homeHover.style.textDecoration = 'underline';
-      homeHover.style.cursor = 'pointer';
+            // Add a mouseout event listener
+            homeHover.addEventListener('mouseout', () => {
+                homeHover.style.textDecoration = '';
+            });
+        }
 
+        // Check if loginHover exists before attaching event listeners
+        if (loginHover) {
+            // Add a mouseover event listener
+            loginHover.addEventListener('mouseover', () => {
+                loginHover.style.textDecoration = 'underline';
+                loginHover.style.cursor = 'pointer';
+            });
+
+            // Add a mouseout event listener
+            loginHover.addEventListener('mouseout', () => {
+                loginHover.style.textDecoration = '';
+            });
+        }
+
+        // Select all list items
+        const listItems = document.querySelectorAll('.list-container li');
+
+        // Check if listItems exist before adding event listeners
+        if (listItems.length > 0) {
+            const sound = new Audio('sounds/level-up-3-199576.mp3');
+            
+            listItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    sound.play();
+                    alert('Thank you for your feedback');
+                });
+            });
+        }
     });
-
-    // Add a mouseout event listener
-    homeHover.addEventListener('mouseout', () => {
-      // Change the button's background color back to its original color
-      homeHover.style.backgroundColor = '';
-      
-    });
-
-    const loginHover = document.querySelector('.login');
-
-    // Add a mouseover event listener
-    loginHover.addEventListener('mouseover', () => {
-      // Change the text decoration
-      loginHover.style.textDecoration = 'underline';
-      loginHover.style.cursor = 'pointer';
-    });
-
-    // Add a mouseout event listener
-    loginHover.addEventListener('mouseout', () => {
-      // Change the button's background color back to its original color
-      loginHover.style.textDecoration = '';
-    });
-
-    
-
-  </script>
+</script>
 </body>
 </html>
