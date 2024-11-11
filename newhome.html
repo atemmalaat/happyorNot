@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Annie+Use+Your+Telescope&family=Londrina+Shadow&display=swap" rel="stylesheet">
   <style>
+    /* Global styles (default styles for all screen sizes) */
     .nav {
       background-color: black;
       display: flex;
@@ -20,7 +21,6 @@
       padding: 10px 30px;
       background: linear-gradient(to right, #000000, rgba(128, 0, 0, 0.917));
       border-radius: 12px;
-      max-width: 1000px;
     }
 
     html {
@@ -35,13 +35,11 @@
       font-size: 45px;
     }
 
-
     .home {
       display: flex;
       justify-content: center;
       align-items: center;
       height: fit-content;
-      
     }
 
     .login {
@@ -77,8 +75,6 @@
       display: flex;
       height: 50px;
       width: auto;
-    
-
     }
 
     logo :first-child {
@@ -132,7 +128,6 @@
       color: #f09819;
     }
 
-
     li {
       display: flex;
       flex-direction: row;
@@ -154,6 +149,7 @@
 
     li > h1 {
       font-size: 70px;
+
     }
 
     .happy:hover {
@@ -187,6 +183,7 @@
       border: 10px solid #FF6347; /* Tomato */
       border-radius: 10px;
     }
+
     .sleepy:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
@@ -194,11 +191,63 @@
       border: 10px solid #47e3ff87; /* Tomato */
       border-radius: 10px;
     }
-    
 
-    
+    /* Tablet-specific styles */
+    @media screen and (min-width: 500px) and (max-width: 900px) {
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+      }
 
+      .londrina-shadow-regular {
+        font-size: 35px;
+      }
 
+      .home {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+      }
+
+      .login {
+        font-size: medium;
+        padding: 10px 15px;
+      }
+
+      .search {
+        font-size: medium;
+      }
+
+      .logo-container {
+        height: 80px;
+        justify-content: center;
+      }
+
+      .list-container {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+      }
+
+      li {
+        font-size: large;
+        margin: 10px 0;
+      }
+
+      .feeling-question {
+        font-size: 2rem;
+      }
+
+      .feeling-question:hover {
+        transform: scale(1.03); /* smaller zoom effect */
+      }
+    }
   </style>
 </head>
 <body>
