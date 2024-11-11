@@ -13,13 +13,11 @@
     .nav {
       background-color: black;
       display: flex;
-      flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-      border-bottom: green;
       height: 80px;
       justify-content: space-between;
-
+      padding: 0 20px;
     }
 
     html {
@@ -30,7 +28,8 @@
       font-family: "Londrina Shadow", sans-serif;
       font-weight: 400;
       font-style: normal;
-      color: rgba(8, 236, 141, 0.326);
+      color: black;
+      font-size: 45px;
     }
 
 
@@ -43,16 +42,20 @@
     }
 
     .login {
-      display: flex;
-      height: fit-content;
-      align-items: center;
-      justify-content: center;
-      color: aliceblue;
+      background-color: #08ec8d;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
       font-size: large;
-      
-
-  
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
+    .login:hover {
+      background-color: #04a56d;
+      color: white;
+    }
+
     .search {
       display: flex;
       color: aliceblue;
@@ -61,18 +64,16 @@
 
     .logo-container {
       display: flex;
-      flex-direction: row;
+      background-color: black;
+      padding: 5px;
+      border-radius: 8px;
       height: 100px;
-      background-color: rgb(253, 200, 132);
-      align-content: center;
-      justify-content: center;
     }
 
     .logo {
       display: flex;
       height: 50px;
-      width: 50px;
-      border: 1px solid black;
+      width: auto;
     
 
     }
@@ -80,6 +81,11 @@
     logo :first-child {
       height: 20px;
       width: 2px;
+    }
+
+    .login:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
 
     .question-container {
@@ -131,37 +137,37 @@
       cursor: pointer;
       text-decoration: underline;
     }
-    .login:hover {
-      cursor: pointer;
-      text-decoration: underline;
+
+    li:focus {
+      outline: 3px solid #8e44ad;
     }
 
     .happy:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
-      border: 2px solid greenyellow; /* Gold */
+      border: 10px solid greenyellow; /* Gold */
     }
 
     .chillin:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
-      border: 2px solid #00BFFF; /* Deep Sky Blue */
+      border: 10px solid #00BFFF; /* Deep Sky Blue */
     }
 
     .sad:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
-      border: 2px solid #9370DB; /* Medium Purple */
+      border: 10px solid #9370DB; /* Medium Purple */
     }
 
     .needHelp:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
-      border: 2px solid #FF6347; /* Tomato */
+      border: 10px solid #FF6347; /* Tomato */
     }
     
 
@@ -176,7 +182,7 @@
       <img src="svgImages/logo.svg">
     </div>
     <div class="search">
-      <p>Search: <input type="text"></p>
+      <h1>St James Basketball</h1>
     </div>
     <div class="login">Login</div>
   </nav>
