@@ -11,13 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Annie+Use+Your+Telescope&family=Londrina+Shadow&display=swap" rel="stylesheet">
   <style>
     .nav {
-      background-color: orange;
+      background-color: black;
       display: flex;
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-      border: 2px solid rgb(255, 10, 10);
-      height: 50px;
+      border-bottom: green;
+      height: 80px;
       justify-content: space-between;
 
     }
@@ -26,6 +26,7 @@
       font-family: "Londrina Shadow", sans-serif;
       font-weight: 400;
       font-style: normal;
+      color: rgba(8, 236, 141, 0.326);
     }
 
 
@@ -42,18 +43,22 @@
       height: fit-content;
       align-items: center;
       justify-content: center;
+      color: aliceblue;
+      font-size: large;
       
 
   
     }
     .search {
       display: flex;
+      color: aliceblue;
+      font-size: large;
     }
 
     .logo-container {
       display: flex;
       flex-direction: row;
-      height: 120px;
+      height: 100px;
       background-color: rgb(253, 200, 132);
       align-content: center;
       justify-content: center;
@@ -64,13 +69,13 @@
       height: 50px;
       width: 50px;
       border: 1px solid black;
-      margin-top: 50px;
+    
 
     }
 
     logo :first-child {
-      height: 100px;
-      width: 100px;
+      height: 20px;
+      width: 2px;
     }
 
     .question-container {
@@ -86,7 +91,7 @@
       display: flex;
       flex-direction: column;
       height: 500px;
-      background-color: rgba(255, 187, 16, 0.699);
+      background-color: rgba(255, 183, 0, 0.69);
       align-content: space-evenly;
     }
 
@@ -118,40 +123,68 @@
       width: 500px;
     }
 
+    .happy:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid greenyellow; /* Gold */
+    }
+
+    .chillin:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid #00BFFF; /* Deep Sky Blue */
+    }
+
+    .sad:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid #9370DB; /* Medium Purple */
+    }
+
+    .need-help:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid #FF6347; /* Tomato */
+    }
+    
+    
+
 
   </style>
 </head>
 <body>
   <nav class="nav container">
-    <div class="home">Home</div>
+    <div class="logo">
+      <img src="svgImages/logo.svg">
+    </div>
     <div class="search">
       <p>Search: <input type="text"></p>
     </div>
     <div class="login">Login</div>
   </nav>
-  <div class="logo-container">
-    <div class="logo">
-      <img src="svgImages/logo.svg">
-    </div>
   </div>
   <div class="question-container">
     <h1 class="londrina-shadow-regular">How Are You Feeling Today?</h1>
   </div>
   <div class="list-container">
     <ul>
-      <li>
+      <li class="happy">
         <img src="images/4.svg">
         <h3>Happy</h3>
       </li>
-      <li>
+      <li class="chillin">
         <img src="images/Untitled design.svg">
         <h3>Chillin</h3>
       </li>
-      <li>
+      <li class="sad">
         <img src="images/3.svg">
         <h3>Sad</h3>
       </li>
-      <li>
+      <li class=needHelp">
         <img src="images/2.svg">
         <h3>Need Help!</h3>
       </li>
