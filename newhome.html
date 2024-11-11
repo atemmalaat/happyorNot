@@ -108,23 +108,12 @@
     .list-container {
       display: flex;
       flex-direction: row;
-      height: 500px;
+      height: 1000px;
       background: linear-gradient(to right, #ffe0b5, #fcd29f);
       background-color: rgba(0, 67, 223, 0.802);
       border-radius: 12px;
       align-content: center;
       justify-content: center;
-    }
-
-    h3 {
-      font-style: "Londrina Shadow";
-      border: 1px solid white;
-      display: flex;
-      color: azure;
-      position: relative;
-      height: fit-content;
-      font-size: xx-large;
-      margin-right: 50px;
     }
 
     .feeling-question {
@@ -148,9 +137,10 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      
       align-content: center;
-      width: fit-content;
+      width: max-content;
+      height: fit-content;
+      font-size: xx-large;
     }
 
     .logo:hover {
@@ -162,11 +152,16 @@
       outline: 3px solid #8e44ad;
     }
 
+    li > h1 {
+      font-size: 70px;
+    }
+
     .happy:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
       border: 10px solid greenyellow; /* Gold */
+      border-radius: 10px;
     }
 
     .chillin:hover {
@@ -174,6 +169,7 @@
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
       border: 10px solid #00BFFF; /* Deep Sky Blue */
+      border-radius: 10px;
     }
 
     .sad:hover {
@@ -181,6 +177,7 @@
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
       border: 10px solid #9370DB; /* Medium Purple */
+      border-radius: 10px;
     }
 
     .needHelp:hover {
@@ -188,12 +185,14 @@
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
       border: 10px solid #FF6347; /* Tomato */
+      border-radius: 10px;
     }
     .sleepy:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease-in-out;
       cursor: pointer;
       border: 10px solid #47e3ff87; /* Tomato */
+      border-radius: 10px;
     }
     
 
@@ -219,7 +218,7 @@
   <div class="list-container">
     <ul>
       <li class="happy">
-        <h1>😐</h1>
+        <h1>😁</h1>
       </li>
       <li class="chillin">
         <h1>😐</h1>
