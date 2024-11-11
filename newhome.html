@@ -17,7 +17,10 @@
       flex-wrap: wrap;
       height: 80px;
       justify-content: space-between;
-      padding: 0 20px;
+      padding: 10px 30px;
+      background: linear-gradient(to right, #000000, rgba(128, 0, 0, 0.917));
+      border-radius: 12px;
+      max-width: 1000px;
     }
 
     html {
@@ -104,10 +107,13 @@
 
     .list-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       height: 500px;
-      background-color: rgba(255, 183, 0, 0.69);
-      align-content: space-evenly;
+      background: linear-gradient(to right, #ffe0b5, #fcd29f);
+      background-color: rgba(0, 67, 223, 0.802);
+      border-radius: 12px;
+      align-content: center;
+      justify-content: center;
     }
 
     h3 {
@@ -121,21 +127,30 @@
       margin-right: 50px;
     }
 
-    li > img {
-      display: flex;
-      height: 100px;
-      width: 100px;
-      margin-left: 50px;
+    .feeling-question {
+      font-family: "Londrina Shadow", sans-serif;
+      color: black;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 5px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    .feeling-question:hover {
+      transform: scale(1.05); /* subtle zoom effect */
+      color: #f09819;
     }
 
 
     li {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       
       align-content: center;
-      width: 500px;
+      width: fit-content;
     }
 
     .logo:hover {
@@ -174,6 +189,12 @@
       cursor: pointer;
       border: 10px solid #FF6347; /* Tomato */
     }
+    .sleepy:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      border: 10px solid #47e3ff87; /* Tomato */
+    }
     
 
     
@@ -193,25 +214,24 @@
   </nav>
   </div>
   <div class="question-container">
-    <h1 class="londrina-shadow-regular">Hey! How's your vibe Today?</h1>
+    <h1 class="feeling-question">Hey! How's your vibe Today?</h1>
   </div>
   <div class="list-container">
     <ul>
       <li class="happy">
-        <img src="images/4.svg">
-        <h3>Happy</h3>
+        <h1>😐</h1>
       </li>
       <li class="chillin">
-        <img src="images/Untitled design.svg">
-        <h3>Chillin</h3>
+        <h1>😐</h1>
       </li>
       <li class="sad">
-        <img src="images/3.svg">
-        <h3>Sad</h3>
+        <h1>😠</h1>
       </li>
       <li class="needHelp">
-        <img src="images/2.svg">
-        <h3>Need Help!</h3>
+        <h1>😢</h1>
+      </li>
+      <li class="sleepy">
+        <h1>😴</h1>
       </li>
     </ul>
   </div>
